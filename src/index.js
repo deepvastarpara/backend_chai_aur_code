@@ -2,10 +2,11 @@
 import dotenv from "dotenv";
 // import express from "express";
 import connectDB from "./db/index.js";
+import {app} from "./app.js";
 
 dotenv.config({
     path: "./.env"
-});
+})
 
 // const app = express();
 
@@ -16,7 +17,7 @@ connectDB()
   })
 })
 .catch((error)=>{
-    console.log("MongoDB connection failed !! :", error);
+  console.log("MongoDB connection failed !! :", error);
 });
 
 
