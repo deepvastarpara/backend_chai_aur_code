@@ -62,7 +62,6 @@ const generateAccessAndRefreshTokens = async (userId) => {
   }
 };
 
-
 const registerUser = asyncHandler(async (req, res) => {
     // Registration logic here
     // step 1: get user data from frontend
